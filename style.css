@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: rgb(51, 51, 51);
 }
 
 button {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 path,
@@ -64,7 +64,9 @@ svg {
     pointer-events: all;
 }
 
-.sliders button, .close-save, .close-library {
+.sliders button,
+.close-save,
+.close-library {
     position: absolute;
     top: 0;
     right: 0;
@@ -167,7 +169,7 @@ input[type="range"] {
 .save-popup h4,
 .library-popup h4 {
     font-size: 1.2rem;
-padding: 2rem;
+    padding: 2rem;
 }
 
 .copy-container.active,
@@ -183,12 +185,13 @@ padding: 2rem;
     transform: translateY(0rem);
 }
 
-.save-name{
+.save-name {
     font-size: 1.2rem;
-padding: 1.2rem;
+    padding: 1.2rem;
 }
 
-.close-save, .close-library{
+.close-save,
+.close-library {
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     padding: 1rem;
@@ -197,10 +200,50 @@ padding: 1.2rem;
 .submit-save {
     margin: 2rem;
     padding: 1rem 3rem;
-    background: rgb(60,60,92);
+    background: rgb(60, 60, 92);
     border: none;
     border-radius: 10px;
     color: white;
     cursor: pointer;
     font-size: 0.8rem;
+}
+
+.library-popup {
+    min-width: 40%;
+    padding: 1rem;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+
+.custom-palette {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+}
+
+.small-preview {
+    display: flex;
+    flex: 1;
+}
+
+.custom-palette h4 {
+    flex: 1;
+}
+
+.small-preview div {
+    height: 5rem;
+    flex: 1;
+}
+
+.pick-palette-btn {
+    height: 5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(45, 45, 45);
+    color: white;
 }
