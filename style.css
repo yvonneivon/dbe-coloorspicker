@@ -20,7 +20,7 @@ svg {
 }
 
 .colors {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     color: rgb(212, 212, 212);
 }
@@ -169,7 +169,7 @@ input[type="range"] {
 .save-popup h4,
 .library-popup h4 {
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .copy-container.active,
